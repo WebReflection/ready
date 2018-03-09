@@ -50,6 +50,8 @@ That resulted into pretty much **nothing for 3 years**, that's why.
 <script>this.ready=new Promise($=>addEventListener('DOMContentLoaded',$,{once:!0}))</script>
 ```
 
+You read that correctly, the `DOMContentLoaded` event reaches the global `window` too.
+
 
 ### license ?
 
