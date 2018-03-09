@@ -1,5 +1,7 @@
 # ready
-A pattern to bootstrap any JavaScript on DOMContentLoaded
+A pattern to bootstrap any JavaScript on DOMContentLoaded.
+
+[Live test](https://webreflection.github.io/ready/).
 
 
 ## the pattern
@@ -35,7 +37,7 @@ In September 2015 there was an attempt to [bring `document.ready`](https://githu
 Philosophy took over, so that in October 2016 there was a follow up
 attempt to [bring `document.{parsed,contentLoaded,loaded} promises`](https://github.com/whatwg/html/pull/1936) to every browsers.
 
-That resulted as pretty much nothing for 3 years but I am bit tired of philosophy. That's why.
+That resulted into pretty much **nothing for 3 years**, that's why.
 
 
 ## improvements ?
