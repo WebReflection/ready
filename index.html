@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The window ready pattern</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- add these 2 script on top of every page -->
+    <script>this.Promise||document.write('<script src="//cdn.jsdelivr.net/npm/es6-promise/dist/es6-promise.auto.min.js"><\x2fscript>')</script>
+    <script>this.ready=new Promise(function($){document.addEventListener('DOMContentLoaded',$,{once:true})})</script>
+    <!-- so that every other script after can simply use ready.then(...) to bootstrap -->
+    <script>
+    // proof of concept @ https://webreflection.github.io/ready/
+    ready.then(function () {
+      document.body.innerHTML = 'The <a href="https://github.com/WebReflection/ready">ready</a> pattern works!';
+    });
+    </script>
+  </head>
+  <body></body>
+</html>
