@@ -44,6 +44,11 @@ That resulted into pretty much **nothing for 3 years**, that's why.
 
   * if you are targeting modern browsers you can fully remove the first script.
   * if in 2039 they'll ship a global `ready` you can refactor your code via `grep ready.then`
+  * shortcut targeting modern browsers only (Edge, Chrome, Safari, Firefox, others)
+
+```html
+<script>this.ready=new Promise($=>addEventListener('DOMContentLoaded',$,{once:!0}))</script>
+```
 
 
 ### license ?
